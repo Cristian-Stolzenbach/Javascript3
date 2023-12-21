@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .bordered {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<img id="myImage" src="/ejercicio2/assets/img/1.jpg" width="200" height="200" onclick="changeBorder()" alt="Haz clic en la imagen">
+
+<script>
+function changeBorder() {
+    var img = document.getElementById("myImage");
+    if (img.classList.contains("bordered")) {
+        img.classList.remove("bordered");
+    } else {
+        img.classList.add("bordered");
+    }
+}
+</script>
+
+</body>
+</html>
